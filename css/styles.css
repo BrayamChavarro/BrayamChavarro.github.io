@@ -1,5 +1,4 @@
-
-body {
+body { 
     font-family: Arial, sans-serif;
     background: url('assets/background.jpg') no-repeat center center/cover;
     color: rgb(0, 0, 0);
@@ -10,7 +9,7 @@ body {
     height: 100vh;
 }
 
-h3{
+h3 {
     color: white;
     display: flex;
     justify-content: center;
@@ -33,6 +32,7 @@ h3{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .search-bar {
@@ -41,25 +41,14 @@ h3{
     border: none;
     outline: none;
 }
-.nav-links-contacto{
-    margin-left: 700px;
-    
+
+.nav-links-contacto {
+    margin-left: auto;
+    display: flex;
 }
 
-.nav-links-contacto .nav-btn-contacto  {
-    background: transparent;
-    border: none;
-    color: white;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 5px 10px;
-    transition: 0.3s;
-    text-decoration: none;
-}
-
-
-.nav-links .nav-btn  {
+.nav-links-contacto .nav-btn-contacto,
+.nav-links .nav-btn {
     background: transparent;
     border: none;
     color: white;
@@ -72,17 +61,12 @@ h3{
 }
 
 .nav-links-contacto .nav-btn-contacto.active,
-.nav-links-contacto .nav-btn-contacto:hover {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-}
-
+.nav-links-contacto .nav-btn-contacto:hover,
 .nav-links .nav-btn.active,
 .nav-links .nav-btn:hover {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
-
 
 /* Sección principal */
 .main-content {
@@ -90,7 +74,6 @@ h3{
 }
 
 /* Destacado (Película principal) */
-
 .highlight {
     display: flex;
     background: rgba(0, 0, 0, 0.4);
@@ -100,7 +83,7 @@ h3{
     color: white;
 }
 
-.highlight img{
+.highlight img {
     width: 200px;
     border-radius: 15px;
 }
@@ -109,13 +92,12 @@ h3{
     margin-left: 20px;
 }
 
-.highlight-info h2{
+.highlight-info h2 {
     margin: 0;
 }
 
 .buttons {
     margin-top: 20px;
-    
 }
 
 .watch-btn, .download-btn {
@@ -149,9 +131,9 @@ h3{
     width: 100%;
     border-radius: 10px;
 }
-/*contacto*/
 
-.form-container{
+/* Contacto */
+.form-container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     padding: 20px;
@@ -159,23 +141,23 @@ h3{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     width: 300px;
     text-align: center;
-    margin-left: 75vh;
-    
+    margin-left: auto;
+    margin-right: auto;
 }
 
-form{
+/* Formularios */
+form {
     display: flex;
     flex-direction: column;
-    
 }
 
-label{
+label {
     text-align: left;
     margin-top: 15px;
     color: white;
 }
 
-input, textarea{
+input, textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -183,7 +165,7 @@ input, textarea{
     outline: none;
 }
 
-button{
+button {
     margin-top: 15px;
     background: #3498db;
     color: white;
@@ -194,7 +176,7 @@ button{
     font-size: 16px;
 }
 
-button:hover{
+button:hover {
     background: #2980b9;
 }
 
@@ -202,4 +184,73 @@ button:hover{
     margin-top: 10px;
     font-size: 14px;
     color: white;
+}
+
+/* Media Queries para hacerlo responsive */
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links-contacto {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+
+    .highlight {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .highlight img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .movies-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-container {
+        width: 90%;
+        margin-left: 0;
+    }
+}
+
+/* Para pantallas muy pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-links-contacto .nav-btn-contacto,
+    .nav-links .nav-btn {
+        font-size: 14px;
+        padding: 3px 8px;
+    }
+
+    .movies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-info {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .highlight {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 80%;
+    }
 }
