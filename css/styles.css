@@ -1,3 +1,5 @@
+/* Estilos generales (sin cambios en la versión desktop) */
+
 body { 
     font-family: Arial, sans-serif;
     background: url('assets/background.jpg') no-repeat center center/cover;
@@ -32,7 +34,6 @@ h3 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    flex-wrap: wrap;
 }
 
 .search-bar {
@@ -186,7 +187,7 @@ button:hover {
     color: white;
 }
 
-/* Media Queries para hacerlo responsive */
+/* Media Queries para móvil (sin afectar desktop) */
 
 /* Para pantallas pequeñas */
 @media (max-width: 768px) {
