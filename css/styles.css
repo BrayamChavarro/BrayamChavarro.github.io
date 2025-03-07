@@ -187,31 +187,46 @@ button:hover {
     color: white;
 }
 
-/* Media Queries para móvil (sin afectar desktop) */
+/* Media Queries para móvil */
 
 /* Para pantallas pequeñas */
 @media (max-width: 768px) {
+    /* Barra de navegación ocupa toda la parte superior */
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+        position: fixed; /* Fija la barra de navegación en la parte superior */
+        top: 0;
+        left: 0;
+        width: 100%; /* Barra ocupa el 100% del ancho */
+        background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+        padding: 15px 20px; /* Padding ajustado */
+        z-index: 1000;
     }
 
-    .nav-links-contacto {
+    .navbar .nav-links-contacto {
         margin-left: 0;
         margin-top: 10px;
         justify-content: flex-start;
     }
 
+    /* Ajustar el contenedor principal en móvil */
+    .container {
+        width: 90%;
+        margin-top: 100px; /* Para que no se solape con la navbar */
+    }
+
+    /* Destacado (Película principal) */
     .highlight {
         flex-direction: column;
         align-items: center;
+        padding: 10px;
     }
 
     .highlight img {
-        width: 100%;
+        width: 100%; /* Ajustar imagen al 100% del contenedor */
         margin-bottom: 15px;
     }
 
+    /* Recomendaciones */
     .movies-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -229,13 +244,13 @@ button:hover {
     }
 
     .navbar {
-        padding: 5px;
+        padding: 10px;
     }
 
     .nav-links-contacto .nav-btn-contacto,
     .nav-links .nav-btn {
         font-size: 14px;
-        padding: 3px 8px;
+        padding: 5px 10px;
     }
 
     .movies-grid {
