@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="styless.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <nav class="sidebar">
+            <div class="logo">Game Store</div>
+            <ul>
+                <li class="active">Inicio</li>
+                <li>Biblioteca</li>
+                <li>Comunidad</li>
+                <li>Amigos</li>
+                <li>Configuración</li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <main class="content">
+            <div class="header">
+                <input type="text" placeholder="Buscar juegos...">
+                <div class="user">Jenny Wilson</div>
+            </div>
+
+            <!-- Sección de juegos destacados -->
+            <section class="featured">
+                <div class="game">
+                    <img src="stray.jpg" alt="Stray">
+                    <div class="info">
+                        <h2>Stray</h2>
+                        <p>Un gato callejero perdido en un mundo cibernético.</p>
+                        <button>Comprar - $16.99</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de ofertas o populares -->
+            <section class="games">
+                <h2>Ofertas Especiales</h2>
+                <div class="grid">
+                    <div class="game-card">
+                        <img src="hogwarts.jpg" alt="Hogwarts Legacy">
+                        <h3>Hogwarts Legacy</h3>
+                        <p>$49.99</p>
+                    </div>
+                    <div class="game-card">
+                        <img src="callofduty.jpg" alt="Call of Duty">
+                        <h3>Call of Duty</h3>
+                        <p>$39.99</p>
+                    </div>
+                    <div class="game-card">
+                        <img src="fifa23.jpg" alt="FIFA 23">
+                        <h3>FIFA 23</h3>
+                        <p>$29.99</p>
+                    </div>
+                    <div class="game-card">
+                        <img src="masseffect.jpg" alt="Mass Effect">
+                        <h3>Mass Effect</h3>
+                        <p>$24.99</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
