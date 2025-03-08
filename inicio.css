@@ -1,0 +1,136 @@
+.div-divider-line {
+    position: absolute;
+    top: 575.43px;
+    left: 256.94px;
+    background-color: rgba(245, 245, 245, 0.1);
+    width: 926.1px;
+    height: 1px;
+    mix-blend-mode: normal;
+}
+.div-hero-wrapper-child {
+    position: absolute;
+    top: -198.6px;
+    left: calc(50% - 643.98px);
+    filter: blur(200px);
+    border-radius: 50%;
+    background-color: rgba(13, 15, 35, 0.8);
+    width: 1244px;
+    height: 655px;
+}
+.book-a-demo {
+    position: absolute;
+    top: 13.41px;
+    left: 43.87px;
+    line-height: 19.5px;
+    font-weight: 600;
+}
+.div-button-text {
+    position: absolute;
+    top: 1.95px;
+    left: 1.95px;
+    border-radius: 155.99px;
+    background-color: #141219;
+    width: 186.4px;
+    height: 46.8px;
+    overflow: hidden;
+    mix-blend-mode: normal;
+}
+.link-button {
+    width: 190.3px;
+    position: relative;
+    border-radius: 155.99px;
+    background-color: #7286ff;
+    height: 50.7px;
+    mix-blend-mode: normal;
+}
+.div-button-text1 {
+    position: absolute;
+    top: 1.95px;
+    left: 1.95px;
+    border-radius: 155.99px;
+    background-color: #141219;
+    width: 238px;
+    height: 46.8px;
+    overflow: hidden;
+    mix-blend-mode: normal;
+}
+.div-try-enterpret-btn {
+    width: 241.9px;
+    position: relative;
+    border-radius: 155.99px;
+    background-color: #7286ff;
+    height: 50.7px;
+    overflow: hidden;
+    flex-shrink: 0;
+    mix-blend-mode: normal;
+}
+.div-button-wrapper {
+    position: absolute;
+    top: 259.34px;
+    left: 0px;
+    width: 1247.9px;
+    height: 50.7px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 388.4px;
+    box-sizing: border-box;
+    gap: 39px;
+    mix-blend-mode: normal;
+}
+.transform-your-data {
+    position: absolute;
+    top: 165.4px;
+    left: calc(50% - 495.98px);
+    font-size: 19.5px;
+    line-height: 31.2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 991px;
+}
+.hola-soy {
+    position: absolute;
+    top: -0.24px;
+    left: 15.85px;
+    line-height: 68.25px;
+}
+.brayam-chavarro {
+    position: absolute;
+    top: 68.4px;
+    left: calc(50% - 240.98px);
+    line-height: 68.25px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), linear-gradient(90deg, #7186ff 11%, #fe7587);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.h1-home-hero {
+    position: absolute;
+    top: 0px;
+    left: 124.79px;
+    width: 998.3px;
+    height: 136.5px;
+    mix-blend-mode: normal;
+    font-size: 58.5px;
+}
+.div-hero-wrapper {
+    position: absolute;
+    top: 218.6px;
+    left: 96.03px;
+    width: 1247.9px;
+    height: 310px;
+    mix-blend-mode: normal;
+}
+.div-padding-global {
+    width: 100%;
+    position: relative;
+    height: 780px;
+    mix-blend-mode: normal;
+    text-align: left;
+    font-size: 15.6px;
+    color: #fff;
+    font-family: Raleway;
+}
+

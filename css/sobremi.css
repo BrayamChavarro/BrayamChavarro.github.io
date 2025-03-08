@@ -23,6 +23,7 @@ h3 {
 .container {
     width: 90%;
     max-width: 1200px;
+    
     background: rgba(22, 19, 19, 0.5);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -31,23 +32,7 @@ h3 {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.container-left {
-    width: 30%;
-    height:80%;
-    background: rgba(22, 19, 19, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 20px;
-    margin-left: 2%;
-    margin-right: 2%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
-}
-.container-left h2{
-    color: white;
-    display: flex;
-    justify-content: center;
-}
 
 
 
